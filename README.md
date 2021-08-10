@@ -8,7 +8,7 @@
 </div>
 
 <h2 align="center">💻 PROJETO</h2>
-<p align="center"> Projeto ainda a ser definido</p>
+<p align="center"> Projeto </p>
 
 
 
