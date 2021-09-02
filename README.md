@@ -21,8 +21,8 @@
 <div align="center" style="display: inline_block"><br>
     <a href="https://github.com/3DD1"><img alt="Edmilson" src="https://avatars.githubusercontent.com/u/56802572?v=4" width="115"></a> 
     <a href="https://github.com/mnshade"><img alt="Gustavo" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
-    <a href="https://github.com/RenatoCesarOF"><img alt="Renato" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
-    <a href="https://github.com/LucasGomes92"><img alt="Lucas" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
+    <a href="https://github.com/RenatoCesarOF"><img alt="Renato" src="https://avatars.githubusercontent.com/u/79548172?v=4" width="115"></a>
+    <a href="https://github.com/LucasGomes92"><img alt="Lucas" src="https://avatars.githubusercontent.com/u/61031078?v=4" width="115"></a>
 </div>
 
 
