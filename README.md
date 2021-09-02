@@ -21,8 +21,8 @@
 <div align="center" style="display: inline_block"><br>
     <a href="https://github.com/3DD1"><img alt="Edmilson" src="https://avatars.githubusercontent.com/u/56802572?v=4" width="115"></a> 
     <a href="https://github.com/mnshade"><img alt="Gustavo" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
-  <p> Lucas </p>
-  <p> Renato </p>
+    <a href="https://github.com/RenatoCesarOF"><img alt="Renato" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
+    <a href="https://github.com/LucasGomes92"><img alt="Lucas" src="https://avatars.githubusercontent.com/u/47904144?v=4" width="115"></a>
 </div>
 
 
@@ -41,3 +41,29 @@
   <img align="center" alt="3DD1-GITHUB" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
   <img align="center" alt="3DD1-INTELLIJ" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg">
 </div>
+<h2> Instalação Frameworks</h2>
+
+Angular
+```bash
+$ npm install -g @angular/cli
+```
+
+Angular Material
+```bash
+$ ng add @angular/material
+```
+
+Bootstrap
+```bash
+$ npm install bootstrap
+```
+
+Jquery
+```bash
+$ npm install jquery
+```
+
+Popper.js
+```bash
+$ npm install popper.js
+```
