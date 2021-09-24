@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './view/nav/nav.component';
 import { FooterComponent } from './view/footer/footer.component';
 import { AsideComponent } from './view/aside/aside.component';
 import { ViewDuvidaComponent } from './bot/coordenador/view-duvida/view-duvida.component';
@@ -17,7 +16,6 @@ import { HomeComponent } from './view/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     FooterComponent,
     AsideComponent,
     ViewDuvidaComponent,
