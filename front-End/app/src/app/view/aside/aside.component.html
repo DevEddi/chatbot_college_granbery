@@ -1,19 +1,29 @@
-<div>
-  <div>
-    <img src="" alt="logo-granbery">
-    <h1>Faculdade Metodista Granbery</h1>
-  </div>
-  <div>
-    <input type="button" value="Acesso Aluno">
-    <hr>
-    <form>
-      <input type="text" value="Login">
-      <input type="text" value="password">
-      <button type="submit">Acesso Professor</button>
-    </form>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col">
+      <div>
+        <img src="assets/images/logoGB.svg" alt="logo-granbery" width="150px" height="150px">
+        <h1>Faculdade Metodista Granbery</h1>
+      </div>
+      <div class="acesso-bot ">
+        <form>
+          <button class="btn btn-primary">Acesso Aluno</button>
+          <hr>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
 
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="password" value="">
+          </div>
+          <button type="submit" class="btn btn-primary">Acesso Professor</button>
+        </form>
+      </div>
+    </div>
+    <div class="col agulhao">
+      <img src="assets/images/smartphoneAgulhao.svg" alt="smartphoneimage">
+    </div>
   </div>
-</div>
-<div>
-  <img src="" alt="smartphoneimage">
 </div>
