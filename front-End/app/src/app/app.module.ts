@@ -12,6 +12,9 @@ import { ViewPerguntaComponent } from './bot/aluno/view-pergunta/view-pergunta.c
 import { ChatBotComponent } from './bot/aluno/chat-bot/chat-bot.component';
 import { CriaChatBotComponent } from './bot/coordenador/cria-chat-bot/cria-chat-bot.component';
 import { HomeComponent } from './view/home/home.component';
+import { CadastroComponent } from './view/cadastro/cadastro.component';
+import { TelefoneComponent } from './view/telefone/telefone.component';
+import { LocalizacaoComponent } from './view/localizacao/localizacao.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HomeComponent } from './view/home/home.component';
     ViewPerguntaComponent,
     ChatBotComponent,
     CriaChatBotComponent,
-    HomeComponent
+    HomeComponent,
+    CadastroComponent,
+    TelefoneComponent,
+    LocalizacaoComponent
   ],
   imports: [
     BrowserModule,
