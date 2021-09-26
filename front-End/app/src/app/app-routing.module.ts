@@ -4,6 +4,8 @@ import { CadastroComponent } from './view/footer/cadastro/cadastro.component';
 import {HomeComponent} from "./view/home/home.component";
 import {TelefoneComponent} from "./view/footer/telefone/telefone.component";
 import {LocalizacaoComponent} from "./view/footer/localizacao/localizacao.component";
+import {ChatBotComponent} from "./dashboard/chat-bot/chat-bot.component";
+import {AskTheBotComponent} from "./dashboard/ask-the-bot/ask-the-bot.component";
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path:'localizacao',
     component:LocalizacaoComponent,
+  },
+  {
+    path:'chat-bot',
+    component:ChatBotComponent,
+  },
+  {
+    path:'ask-bot',
+    component: AskTheBotComponent,
   }
 
 
