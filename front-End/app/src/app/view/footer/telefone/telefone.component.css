@@ -1,15 +1,3 @@
-
-
-.acesso-bot{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.acesso-bot input, button{
-  width: 300px;
-}
-
 .agulhao{
   background-image: url("/assets/images/smartphoneLogoAgulhao.svg");
   background-repeat: no-repeat;
@@ -18,4 +6,8 @@
 }
 .col{
   height: 90vh;
+}
+
+hr{
+  margin-bottom: 60px;
 }
