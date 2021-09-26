@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroComponent } from './view/cadastro/cadastro.component';
+import { CadastroComponent } from './view/footer/cadastro/cadastro.component';
 import {HomeComponent} from "./view/home/home.component";
-import {TelefoneComponent} from "./view/telefone/telefone.component";
-import {LocalizacaoComponent} from "./view/localizacao/localizacao.component";
+import {TelefoneComponent} from "./view/footer/telefone/telefone.component";
+import {LocalizacaoComponent} from "./view/footer/localizacao/localizacao.component";
 
 const routes: Routes = [
   {
@@ -22,6 +22,7 @@ const routes: Routes = [
     path:'localizacao',
     component:LocalizacaoComponent,
   }
+
 
 ];
 
