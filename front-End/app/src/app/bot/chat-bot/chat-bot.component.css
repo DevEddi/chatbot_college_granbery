@@ -15,3 +15,7 @@ h1{
   margin-bottom: 10px;
   float: right;
 }
+table{
+  background-color:white;
+  border-radius: 3px;
+}

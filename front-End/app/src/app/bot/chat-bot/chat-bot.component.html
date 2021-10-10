@@ -3,16 +3,21 @@
   <div class="row">
     <div class="col bg-primary">
       <h1>Dúvidas</h1>
-      <div class="list-group">
-        <button type="button" class="list-group-item list-group-item-action">Matrícula</button>
-        <button type="button" class="list-group-item list-group-item-action">Acesso Moodle</button>
-        <button type="button" class="list-group-item list-group-item-action">Erro Financeiro</button>
-      </div>
+      <table class="table" id="tabelaDePerguntas">
+        <thead>
+        <tr>
+          <th scope="col">Nº</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Opções</th>
+        </tr>
+        </thead>
+        <tbody id="tabelaDePerguntasTbody"></tbody>
+      </table>
     </div>
 
     <div class="col bg-primary">
       <h1>Editar</h1>
-      <div class="formBot">
+      <form class="formBot">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Título</label>
           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Exemplo: Matricula, professor, etc">
@@ -25,8 +30,8 @@
           <label for="cria-resposta" class="form-label">Resposta</label>
           <textarea class="form-control" id="cria-resposta" rows="3"></textarea>
         </div>
-        <button id="botao-adicionar" class="btn btn-danger">Adicionar</button>
-      </div>
+        <button id="botao-adicionar" class="btn btn-danger" type="submit">Adicionar</button>
+      </form>
     </div>
 
   </div>
