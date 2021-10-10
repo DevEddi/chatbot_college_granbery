@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+}
+
+.list-group{
+  margin-top: 10vh;
+  font-size: 20px;
+
+}
+
+.chatDoBot{
+  margin-top: 10vh;
+  background-color: #A8A8B3;
+  border-radius: 30px;
+}
+.chatDoBot div{
+  margin: 10px;
+}
+

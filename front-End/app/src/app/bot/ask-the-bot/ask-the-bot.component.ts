@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ask-the-bot.component.css']
 })
 export class AskTheBotComponent implements OnInit {
+  nomeBot: string = "Agulhão Bot";
 
   constructor() { }
 
