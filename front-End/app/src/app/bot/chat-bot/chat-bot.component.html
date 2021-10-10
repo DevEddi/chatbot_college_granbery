@@ -1,0 +1,39 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col bg-primary">
+      <h1>Dúvidas</h1>
+      <table class="table" id="tabelaDePerguntas">
+        <thead>
+        <tr>
+          <th scope="col">Nº</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Opções</th>
+        </tr>
+        </thead>
+        <tbody id="tabelaDePerguntasTbody"></tbody>
+      </table>
+    </div>
+
+    <div class="col bg-primary">
+      <h1>Editar</h1>
+      <form class="formBot">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Título</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Exemplo: Matricula, professor, etc">
+        </div>
+        <div class="mb-3">
+          <label for="criar-pergunta" class="form-label">Pergunta</label>
+          <textarea class="form-control" id="criar-pergunta" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="cria-resposta" class="form-label">Resposta</label>
+          <textarea class="form-control" id="cria-resposta" rows="3"></textarea>
+        </div>
+        <button id="botao-adicionar" class="btn btn-danger" type="submit">Adicionar</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+

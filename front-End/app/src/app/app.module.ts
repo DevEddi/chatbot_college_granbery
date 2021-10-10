@@ -10,9 +10,9 @@ import { HomeComponent } from './view/home/home.component';
 import { CadastroComponent } from './view/footer/cadastro/cadastro.component';
 import { TelefoneComponent } from './view/footer/telefone/telefone.component';
 import { LocalizacaoComponent } from './view/footer/localizacao/localizacao.component';
-import { ChatBotComponent } from './view/chat-bot/chat-bot.component';
-import { AskTheBotComponent } from './view/ask-the-bot/ask-the-bot.component';
-import { NavBarComponent } from './view/nav-bar/nav-bar.component';
+import { ChatBotComponent } from './bot/chat-bot/chat-bot.component';
+import { AskTheBotComponent } from './bot/ask-the-bot/ask-the-bot.component';
+import { NavBarComponent } from './bot/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
