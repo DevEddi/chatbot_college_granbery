@@ -1,6 +1,17 @@
 h1{
   text-align: center;
 }
-.list-group{
 
+.col{
+  margin: 13px;
+  border-radius: 30px;
+  color: #F8F8F8;
+  padding-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#botao-adicionar{
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  float: right;
 }
