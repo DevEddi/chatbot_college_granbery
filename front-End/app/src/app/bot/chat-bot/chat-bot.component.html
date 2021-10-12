@@ -3,7 +3,12 @@
   <div class="row">
     <div class="col bg-primary">
       <h1>Dúvidas</h1>
-
+      <!--Filtro-->
+      <div class="search-container">
+        <mat-form-field appearance="fill">
+          <input matInput placeholder="Filtrar dados" autocomplete="off" (keyup)="filterData($event)">
+        </mat-form-field>
+      </div>
       <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
 
         <!--Alguns titulos são exemplos para testes de saida json-->
@@ -26,6 +31,11 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+      <!--Marcador de Página-->
+      <mat-paginator #paginator
+                     [pageSize]="4"
+                     [pageSizeOptions]="[2, 5, 10, 25, 100]">
+      </mat-paginator>
 
     </div>
 
