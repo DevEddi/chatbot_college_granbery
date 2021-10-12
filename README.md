@@ -1,8 +1,6 @@
 
 <h1 align="center">ChatBot Granbery</h1>
 <div align="center" style="display: inline_block"><br>
-    <img alt="" src="https://img.shields.io/github/issues/{3DD1}/{project_savemoney_2}.svg" >
-    <img alt="" src="https://img.shields.io/github/issues-closed/{username}/{repo-name}.svg" >
    <h1 align="center">Faculdade Metodista Granbery</h1>    
      <a href="http://granbery.edu.br/"><img alt="FMG" src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fgranbery.edu.br%2Fnoticias%2Ffaculdade-metodista-granbery-abre-processo-de-selecao-para-diretor&psig=AOvVaw1jCgcszxH3eXkIMEzyRnu3&ust=1628646425787000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCLDQpu-qpfICFQAAAAAdAAAAABAD" ></a>
 </div>
