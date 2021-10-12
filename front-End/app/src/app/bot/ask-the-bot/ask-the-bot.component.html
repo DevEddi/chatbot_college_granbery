@@ -8,7 +8,7 @@
                 <img src="favicon.ico" width="30px" height="30px" alt="imgBot">
                 <h4>{{alunoAleatorio}}</h4>
               </div>
-              <input type="text" class="" id="">
+              <textarea class="form-control" id="criar-pergunta" rows="3" placeholder="Tire sua dúvida:"></textarea>
             </li>
             <li>
               <div class="chat-nome">
@@ -16,24 +16,7 @@
                 <h4>{{nomeBot}}</h4>
               </div>
               <mat-dialog-content>Boa noite, como posso ajudar?</mat-dialog-content>
-              <mat-form-field appearance="fill">
 
-                <mat-label>Posso ajudar?</mat-label>
-                <input matInput [(ngModel)]="nomeBot">
-              </mat-form-field>
-            </li>
-            <li>
-              <button mat-raised-button (click)="openDialog()">Pick one</button>
-            </li>
-            <li *ngIf="nomeBot">
-              You chose: <i>Test</i>
-            </li>
-            <li>
-              <img src="favicon.ico">
-              <mat-form-field appearance="fill">
-                <mat-label>Posso ajudar?</mat-label>
-                <input matInput [(ngModel)]="nomeBot">
-              </mat-form-field>
             </li>
           </ol>
         </div>
