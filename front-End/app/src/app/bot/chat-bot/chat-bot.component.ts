@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatTableDataSource} from "@angular/material/table";
+import {ChatBotService} from "./chat-bot.service";
 
 @Component({
   selector: 'app-chat-bot',
@@ -7,47 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatBotComponent implements OnInit {
 
-  constructor() { }
+  displayedColumns = ['id', 'name', 'email'];
+  dataSource!: MatTableDataSource<any>;
+  constructor(private service: ChatBotService) {
+
+  }
 
   ngOnInit(): void {
+    this.service.getUserData().subscribe((response: any) => {
+      this.dataSource = new MatTableDataSource(response)
+      console.log('response is', response);
+    })
   }
-  /*
-  //Processar Formulario
 
-  $('#tabelaPerguntas').submit(function (event) {
-    event.preventDefault();
-
-
-    //Criar formData
-    var formData = {
-
-      'nome_receita': $('#input_nome_receita').val(),
-      'valor_receita': $('#input_valor_receita').val(),
-      'descricao_receita': $('#input_descricao_receita').val()
-    };
-
-    $.ajax({
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Beaver ' + $.cookie('jwt_token'),
-      },
-      type: 'POST',
-      url: 'http://localhost:8080/api/receita/incluir',
-      data: JSON.stringify(formData),
-      dataType: 'json',
-      encode: true,
-      success: function (data) {
-        location.href = 'receita.html';
-
-      },
-      error: function (data) {
-        $('#div-alert-message').prepend(data.responseText);
-        $('#div-alert-message').fadeIn();
-      }
-
-    });
-
-  });
-
-  */
 }

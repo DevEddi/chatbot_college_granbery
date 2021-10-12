@@ -13,6 +13,12 @@ import { LocalizacaoComponent } from './view/footer/localizacao/localizacao.comp
 import { ChatBotComponent } from './bot/chat-bot/chat-bot.component';
 import { AskTheBotComponent } from './bot/ask-the-bot/ask-the-bot.component';
 import { NavBarComponent } from './bot/nav-bar/nav-bar.component';
+import {MatTableModule} from "@angular/material/table";
+import {HttpClientModule} from "@angular/common/http";
+import {MatSortModule} from "@angular/material/sort";
+import {MatInputModule} from "@angular/material/input";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { NavBarComponent } from './bot/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatSortModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent, FooterComponent]

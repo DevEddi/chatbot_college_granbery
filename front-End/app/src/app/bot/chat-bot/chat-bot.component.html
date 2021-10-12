@@ -3,16 +3,30 @@
   <div class="row">
     <div class="col bg-primary">
       <h1>Dúvidas</h1>
-      <table class="table" id="tabelaDePerguntas">
-        <thead>
-        <tr>
-          <th scope="col">Nº</th>
-          <th scope="col">Titulo</th>
-          <th scope="col">Opções</th>
-        </tr>
-        </thead>
-        <tbody id="tabelaDePerguntasTbody"></tbody>
+
+      <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--Alguns titulos são exemplos para testes de saida json-->
+        <!--ID pergunta bot-->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>id</th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <!--nome pergunta bot-->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>Título</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <!--email pergunta bot-->
+        <ng-container matColumnDef="email">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>Pergunta</th>
+          <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+
     </div>
 
     <div class="col bg-primary">
@@ -30,7 +44,9 @@
           <label for="cria-resposta" class="form-label">Resposta</label>
           <textarea class="form-control" id="cria-resposta" rows="3"></textarea>
         </div>
-        <button id="botao-adicionar" class="btn btn-danger" type="submit">Adicionar</button>
+        <button id="adicionar" class="btn btn-light botao-editar" type="submit">Adicionar</button>
+        <button id="excluir" class="btn btn-light botao-editar" type="submit">Excluir</button>
+        <button id="editar" class="btn btn-light botao-editar" type="submit">Editar</button>
       </form>
     </div>
 
