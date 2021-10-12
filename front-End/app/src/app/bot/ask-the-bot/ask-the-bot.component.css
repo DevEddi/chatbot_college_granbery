@@ -1,7 +1,13 @@
 h1{
   text-align: center;
 }
-
+.container-fluid{
+  width: 100%;
+}
+.container ol li{
+  list-style-type: none;
+  margin: 20px;
+}
 .list-group{
   margin-top: 10vh;
 
@@ -16,4 +22,9 @@ h1{
 .chatDoBot div{
   margin: 10px;
 }
-
+.chat-nome{
+  display: flex;
+}
+.chat-nome h4{
+  padding-left: 20px;
+}

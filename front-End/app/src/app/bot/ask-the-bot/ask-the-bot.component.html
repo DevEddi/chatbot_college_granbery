@@ -1,38 +1,40 @@
 <app-nav-bar></app-nav-bar>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <h1>Dúvidas Frequentes</h1>
-      <div class="list-group">
-        <button type="button" class="list-group-item list-group-item-action">Matrícula</button>
-        <button type="button" class="list-group-item list-group-item-action">Acesso Moodle</button>
-        <button type="button" class="list-group-item list-group-item-action">Erro Financeiro</button>
-      </div>
-    </div>
+     <h1>Chat</h1>
+        <div class="container">
+          <ol>
+            <li>
+              <div class="chat-nome">
+                <img src="favicon.ico" width="30px" height="30px" alt="imgBot">
+                <h4>{{alunoAleatorio}}</h4>
+              </div>
+              <input type="text" class="" id="">
+            </li>
+            <li>
+              <div class="chat-nome">
+                <img src="favicon.ico" width="30px" height="30px" alt="imgBot">
+                <h4>{{nomeBot}}</h4>
+              </div>
+              <mat-dialog-content>Boa noite, como posso ajudar?</mat-dialog-content>
+              <mat-form-field appearance="fill">
 
-    <div class="col">
-      <h1>{{ nomeBot }}</h1>
-      <div class="chatDoBot">
-        <div class="respostaBot">
-          <div>
-            <img src="./assets/images/agulhaoLogo.svg" width="20px" height="20px">
-            <h4>{{nomeBot}}</h4>
-          </div>
-          <div class="textoBot">
-
-          </div>
+                <mat-label>Posso ajudar?</mat-label>
+                <input matInput [(ngModel)]="nomeBot">
+              </mat-form-field>
+            </li>
+            <li>
+              <button mat-raised-button (click)="openDialog()">Pick one</button>
+            </li>
+            <li *ngIf="nomeBot">
+              You chose: <i>Test</i>
+            </li>
+            <li>
+              <img src="favicon.ico">
+              <mat-form-field appearance="fill">
+                <mat-label>Posso ajudar?</mat-label>
+                <input matInput [(ngModel)]="nomeBot">
+              </mat-form-field>
+            </li>
+          </ol>
         </div>
-        <div class="perguntaAluno">
-          <div>
-            <img src="./assets/images/agulhaoLogo.svg" width="20px" height="20px">
-            <h4>Aluno</h4>
-          </div>
-          <div class="textoaluno">
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </div>
