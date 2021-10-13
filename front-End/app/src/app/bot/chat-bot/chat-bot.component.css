@@ -22,3 +22,20 @@ table{
   width: 140px;
   color: black;
 }
+.th-id{
+  width: 30px;
+}
+.th-titulo{
+  width: 170px;
+}
+.container-fluid mat-form-field{
+  width: 100%;
+  color: black;
+}
+.filtro-pesquisa{
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+
+  margin: 0 0 10px;
+}
