@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
 <div class="container-fluid">
   <div class="row">
-    <div class="col bg-primary">
+    <div class="col bg-primary container">
       <h1>Dúvidas</h1>
       <!--Filtro-->
       <div class="filtro-pesquisa">
@@ -9,11 +9,11 @@
           <input  matInput placeholder="Digite para procurar" autocomplete="off" (keyup)="filterData($event)">
         </mat-form-field>
       </div>
-      <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+      <table class="tabela-perguntas" mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
 
         <!--Alguns titulos são exemplos para testes de saida json-->
         <!--ID pergunta bot-->
-        <ng-container matColumnDef="id">
+        <ng-container  matColumnDef="id">
           <th class="th-id" mat-header-cell mat-sort-header *matHeaderCellDef>id</th>
           <td mat-cell *matCellDef="let element"> {{element.id}} </td>
         </ng-container>

@@ -1,6 +1,15 @@
 <app-nav-bar></app-nav-bar>
 <div class="container-fluid">
      <h1>Chat</h1>
+  <ol>
+    <li>
+      <mat-form-field appearance="fill">
+        <h3>{{nomeBot}}</h3>
+        <input matInput [(ngModel)]="nomeBot">
+      </mat-form-field>
+    </li>
+  </ol>
+      <!--
         <div class="container">
           <ol>
             <li>
@@ -20,4 +29,5 @@
             </li>
           </ol>
         </div>
+        -->
 </div>
