@@ -61,3 +61,14 @@ mat-paginator{
   border-top: 1px solid black;
 }
 
+::placeholder{
+  color: black;
+}
+
+mat-form-field{
+  padding: 0 15px 0;
+}
+.mat-select-arrow{
+  color: black;
+}
+

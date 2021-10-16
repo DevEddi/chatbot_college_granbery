@@ -6,7 +6,7 @@
       <!--Filtro-->
       <div class="filtro-pesquisa">
         <mat-form-field  appearance="fill">
-          <input  matInput placeholder="Digite para procurar" autocomplete="off" (keyup)="filterData($event)">
+          <input  matInput placeholder="Pesquisar" autocomplete="off" (keyup)="filterData($event)">
         </mat-form-field>
       </div>
       <table class="tabela-perguntas" mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
