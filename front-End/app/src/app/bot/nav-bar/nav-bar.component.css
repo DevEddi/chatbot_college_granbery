@@ -1,0 +1,12 @@
+  .navbar{
+    background: dodgerblue;
+  }
+
+  a{
+    color: floralwhite;
+  }
+
+  ul{
+    display: block;
+    align-content: center;
+  }

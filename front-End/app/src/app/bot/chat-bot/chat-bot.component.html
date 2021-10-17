@@ -5,26 +5,26 @@
       <h1>Dúvidas</h1>
       <!--Filtro-->
       <div class="filtro-pesquisa">
-        <mat-form-field  appearance="fill">
-          <input  matInput placeholder="Pesquisar" autocomplete="off" (keyup)="filterData($event)">
+        <mat-form-field appearance="fill">
+          <input matInput placeholder="Pesquisar" autocomplete="off" (keyup)="filterData($event)">
         </mat-form-field>
       </div>
       <table class="tabela-perguntas" mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
 
         <!--Alguns titulos são exemplos para testes de saida json-->
         <!--ID pergunta bot-->
-        <ng-container  matColumnDef="id">
+        <ng-container matColumnDef="id">
           <th class="th-id" mat-header-cell mat-sort-header *matHeaderCellDef>id</th>
           <td mat-cell *matCellDef="let element"> {{element.id}} </td>
         </ng-container>
         <!--nome pergunta bot-->
-        <ng-container  matColumnDef="name">
+        <ng-container matColumnDef="name">
           <th class="th-titulo" mat-header-cell mat-sort-header *matHeaderCellDef>Título</th>
           <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
         <!--email pergunta bot-->
         <ng-container matColumnDef="email">
-          <th mat-header-cell mat-sort-header *matHeaderCellDef>Pergunta</th>
+          <th mat-header-cell mat-sort-header *matHeaderCellDef class="th-pergunta">Pergunta</th>
           <td mat-cell *matCellDef="let element"> {{element.email}} </td>
         </ng-container>
 
@@ -36,7 +36,6 @@
                      [pageSize]="4"
                      [pageSizeOptions]="[2, 5, 10, 25, 100]">
       </mat-paginator>
-
     </div>
 
     <div class="col bg-primary">
@@ -44,7 +43,8 @@
       <form class="formBot">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Título</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Exemplo: Matricula, professor, etc">
+          <input type="text" class="form-control" id="exampleFormControlInput1"
+                 placeholder="Exemplo: Matricula, professor, etc">
         </div>
         <div class="mb-3">
           <label for="criar-pergunta" class="form-label">Pergunta</label>
@@ -59,7 +59,6 @@
         <button id="editar" class="btn btn-light botao-editar" type="submit">Editar</button>
       </form>
     </div>
-
   </div>
 </div>
 
