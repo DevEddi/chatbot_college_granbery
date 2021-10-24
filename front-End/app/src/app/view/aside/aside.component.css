@@ -1,4 +1,7 @@
-
+.btn{
+  width: 30%;
+  margin: 0 15px;
+}
 
 .acesso-bot{
   display: flex;
@@ -17,5 +20,6 @@
 
 }
 .col{
+  margin-top: 30px;
   height: 90vh;
 }
