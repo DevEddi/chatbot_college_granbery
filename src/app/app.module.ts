@@ -10,7 +10,6 @@ import { HomeComponent } from './view/home/home.component';
 import { CadastroComponent } from './view/footer/cadastro/cadastro.component';
 import { TelefoneComponent } from './view/footer/telefone/telefone.component';
 import { LocalizacaoComponent } from './view/footer/localizacao/localizacao.component';
-import { ChatBotComponent } from './bot/chat-bot/chat-bot.component';
 import { ChatbotsComponent } from './bot/chatbots/chatbots.component';
 import { NavBarComponent } from './bot/nav-bar/nav-bar.component';
 import { NbThemeModule, NbLayoutModule, NbChatModule, NbSpinnerModule } from '@nebular/theme';
@@ -35,7 +34,6 @@ import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from "@angular/material/dia
     CadastroComponent,
     TelefoneComponent,
     LocalizacaoComponent,
-    ChatBotComponent,
     ChatbotsComponent,
     NavBarComponent
   ],

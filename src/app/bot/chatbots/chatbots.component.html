@@ -1,22 +1,47 @@
-<nb-chat title="Bate-papo com o Agulhão">
-    
-    <nb-chat-message *ngFor="let msg of messages"
-                     type="text"
-                     [message]="msg.text"
-                     [reply]="msg.reply"
-                     [sender]="msg.sender"
-                     [date]="msg.date"
-                     [avatar]="msg.avatar">
-    </nb-chat-message>
+<app-nav-bar></app-nav-bar>
+
+<div class="container-fluid">
+
+  <nb-layout>
+
+    <nb-layout-column>
+
+      <nb-layout>
+
+        <nb-layout-column>
+
+          <nb-chat title="Bate-papo com o Agulhão">
+
+            <nb-chat-message *ngFor="let msg of messages"
+                             type="text"
+                             [message]="msg.text"
+                             [reply]="msg.reply"
+                             [sender]="msg.sender"
+                             [date]="msg.date"
+                             [avatar]="msg.avatar">
+            </nb-chat-message>
 
 
-    <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info"
-        type="text"
-        avatar="/assets/images/agulhaoLogo.svg"
-        message="...">
-        
-    </nb-chat-message>
-    
-    <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
+            <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info"
+                             type="text"
+                             avatar="/assets/images/agulhaoLogo.svg"
+                             message="...">
 
-</nb-chat>
+            </nb-chat-message>
+
+            <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
+
+          </nb-chat>
+
+        </nb-layout-column>
+
+      </nb-layout>
+
+    </nb-layout-column>
+
+  </nb-layout>
+
+
+
+
+</div>
