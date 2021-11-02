@@ -1,5 +1,3 @@
-
-
   .acesso-bot{
     display: flex;
     align-items: center;
@@ -22,4 +20,9 @@
 
   #img-sair{
     margin-left: 30px;
+  }
+  .professorAcesso{
+    text-align: center;
+    color: #212529;
+    font-size: 20px;
   }
