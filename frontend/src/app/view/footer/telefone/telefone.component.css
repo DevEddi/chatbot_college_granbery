@@ -1,13 +1,30 @@
+body{
+  height: 100vh;
+}
+
 .agulhao{
   background-image: url("/assets/images/smartphoneLogoAgulhao.svg");
   background-repeat: no-repeat;
   background-position: center;
 
+
 }
-.col{
-  height: 90vh;
+
+.col agulhao{
+  height: 40vh;
+}
+
+
+.form-control{
+
+  text-align: center;
 }
 
 hr{
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+}
+
+.container-fluid{
+  margin-top: 60px;
+
 }

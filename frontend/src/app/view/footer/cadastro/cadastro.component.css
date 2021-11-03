@@ -6,7 +6,17 @@
 }
 .col{
   height: 90vh;
+  display: grid;
 }
 label{
   margin-top: 30px;
+}
+
+.btn {
+  margin-top: 15px;
+  width: 200px;
+}
+
+.form-text{
+  margin-top: 10px;
 }

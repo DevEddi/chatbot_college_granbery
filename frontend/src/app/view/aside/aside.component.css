@@ -15,12 +15,15 @@
 
   }
   .col{
-    height: 90vh;
+    height: 95vh;
+    width: 50vw;
   }
+
 
   #img-sair{
     margin-left: 30px;
   }
+
   .professorAcesso{
     text-align: center;
     color: #212529;
