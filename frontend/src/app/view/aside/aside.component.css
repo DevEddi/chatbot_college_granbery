@@ -36,11 +36,18 @@
 
 }
 
-.hr-professor{
-  display: flex;
-  flex-wrap: wrap;
+
+h4{
+  border-bottom: 1px solid #b0a8b9;
+  border-top: 1px solid #b0a8b9;
+  padding: 3px;
+  margin: 8px 190px 8px ;
+  font-size: 12px;
+  color: #b0a8b9;
 }
 
-.hr-professor hr, h4{
-  display: flex;
+::placeholder{
+  color: #b0a8b9;
 }
+
+
