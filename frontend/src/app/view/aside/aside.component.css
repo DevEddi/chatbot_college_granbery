@@ -1,31 +1,46 @@
-  .acesso-bot{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.acesso-bot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .acesso-bot input, button{
-    width: 300px;
-  }
+.acesso-bot input, button{
+  width: 275px;
+  font-size: 16px;
+}
 
-  .agulhao{
-    background-image: url("/assets/images/smartphoneLogoAgulhao.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.agulhao{
+  background-image: url("/assets/images/smartphoneLogoAgulhao.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
-  }
-  .col{
-    height: 95vh;
-    width: 50vw;
-  }
+}
+.col{
+  height: 95vh;
+  width: 50vw;
+}
 
 
-  #img-sair{
-    margin-left: 30px;
-  }
+#img-sair{
+  margin-left: 30px;
+}
 
-  .professorAcesso{
-    text-align: center;
-    color: #212529;
-    font-size: 20px;
-  }
+.professorAcesso{
+  text-align: center;
+  color: #212529;
+  font-size: 8px;
+}
+
+.titulo-facu{
+  font-size: 40px;
+
+}
+
+.hr-professor{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hr-professor hr, h4{
+  display: flex;
+}
