@@ -14,11 +14,12 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  /*
   exibir() {
     if(this.router.url === "/"){
       return true;
     }
     return false;
   }
+  */
 }
