@@ -20,11 +20,20 @@ label{
 .form-text{
   margin-top: 10px;
 }
+
 .titulo-facu{
   font-size: 40px;
 
 }
-.titulo-facu{
-  font-size: 40px;
+form{
+  margin: 20px;
+}
+.form-home input{
+  margin: 10px;
+}
 
+@media only screen and (max-width:1000px) {
+  .agulhao{
+    display: none;
+  }
 }
