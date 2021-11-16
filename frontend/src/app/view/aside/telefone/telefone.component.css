@@ -1,6 +1,4 @@
-body{
-  height: 100vh;
-}
+
 
 .agulhao{
   background-image: url("/assets/images/smartphoneLogoAgulhao.svg");
@@ -9,25 +7,17 @@ body{
 
 
 }
-
-.col agulhao{
-  height: 40vh;
+.col{
+  height: 95vh;
 }
 
 
 .form-control{
-
   text-align: center;
 }
 
-hr{
-  margin-bottom: 50px;
-}
 
-.container-fluid{
-  margin-top: 60px;
 
-}
 .titulo-facu{
   font-size: 40px;
 
