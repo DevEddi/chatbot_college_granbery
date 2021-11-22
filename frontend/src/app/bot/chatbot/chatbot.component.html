@@ -1,37 +1,94 @@
 <app-nav-bar></app-nav-bar>
+  <div class="container-fluid">
 
-<div class="container-fluid">
+      <section>
+
+          <nb-layout-column>
+
+              <nb-layout>
+
+                  <nb-layout-column class="container-grid">
+
+
+                      <header>
+
+                          <nb-chat title="Bate-papo com o Agulhão">
+
+                              <nb-chat-message *ngFor="let msg of messages" type="text" [message]="msg.text" [reply]="msg.reply"
+                                               [sender]="msg.sender" [date]="msg.date" [avatar]="msg.avatar">
+                              </nb-chat-message>
+
+                              <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info" type="text"
+                                               avatar="/assets/images/agulhaoLogo.svg" message="...">
+
+                              </nb-chat-message>
+
+                              <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
+
+                          </nb-chat>
+                      </header>
+
+                      <main>
+
+                          <form >
+                              <div class="title">
+                                  <h2>FALE CONOSCO</h2>
+                                  <hr>
+                              </div>
+
+                              <div class="duvidas">
+                                  <label for="nome" class="nome">Nome:</label>
+                                  <input id="nome">
+                                  <label for="email" class="email">E-mail</label>
+                                  <input id="email">
+                                  <label for="curso" class="curso">Curso:</label>
+                                  <input id="curso">
+                                  <label for="descricao" class="descricao">Digite abaixo:</label>
+                                  <input type="text" class="input-descricao" id="descricao">
+                                  <button  nbButton status="primary" id="send" class="btn-send">Enviar</button>
+                              </div>
+                          </form>
+
+                      </main>
+
+<!--                      <aside><p>aside</p></aside>-->
+
+<!--                      <footer>-->
 
 
 
-    <nb-layout-column>
 
-      <nb-layout>
+<!--                              <section>-->
 
-        <nb-layout-column>
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="1" class="perguntas btn sup-um"    >1</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="2" class="perguntas btn sup-dois"  >2</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="3" class="perguntas btn sup-tres"  >3</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="4" class="perguntas btn sup-quatro">4</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="5" class="perguntas btn inf-cinco" >5</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="6" class="perguntas btn inf-seis"  >6</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="7" class="perguntas btn inf-sete"  >7</button>-->
+<!--                                  <button onclick="isertValues('')" nbButton status="primary" id="8" class="perguntas btn inf-oito"  >8</button>-->
 
-          <nb-chat title="Bate-papo com o Agulhão">
+<!--                              </section>-->
 
-            <nb-chat-message *ngFor="let msg of messages" type="text" [message]="msg.text" [reply]="msg.reply"
-              [sender]="msg.sender" [date]="msg.date" [avatar]="msg.avatar">
-            </nb-chat-message>
 
-            <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info" type="text"
-              avatar="/assets/images/agulhaoLogo.svg" message="...">
 
-            </nb-chat-message>
+<!--                      </footer>-->
 
-            <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
 
-          </nb-chat>
-          <br/>
+
+
+
+                  </nb-layout-column>
+
+
+
+              </nb-layout>
+
+
 
         </nb-layout-column>
 
-      </nb-layout>
+      </section>
 
-    </nb-layout-column>
-
-
-
-</div>
+  </div>

@@ -11,8 +11,8 @@ import { CadastroComponent } from './view/footer/cadastro/cadastro.component';
 import { TelefoneComponent } from './view/footer/telefone/telefone.component';
 import { LocalizacaoComponent } from './view/footer/localizacao/localizacao.component';
 import { ChatbotComponent } from './bot/chatbot/chatbot.component';
-import { NavBarComponent } from './bot/nav-bar/nav-bar.component';
-import { NbThemeModule, NbLayoutModule, NbChatModule, NbSpinnerModule } from '@nebular/theme';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {NbThemeModule, NbLayoutModule, NbChatModule, NbSpinnerModule, NbButtonModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {MatTableModule} from "@angular/material/table";
 import {HttpClientModule} from "@angular/common/http";
@@ -35,7 +35,8 @@ import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from "@angular/material/dia
     TelefoneComponent,
     LocalizacaoComponent,
     ChatbotComponent,
-    NavBarComponent
+    NavBarComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -54,6 +55,7 @@ import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from "@angular/material/dia
     NbEvaIconsModule,
     NbChatModule,
     NbSpinnerModule,
+    NbButtonModule
 
   ],
   providers: [
