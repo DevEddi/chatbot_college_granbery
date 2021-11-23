@@ -1,43 +1,42 @@
 <!--Pagina Pricipal-->
-<div class="container-fluid">
+<div class="container">
   <div class="row text-center">
-    <div class="col">
+    <div class="col col-acesso">
       <div>
-        <a href=" "><img src="assets/images/logoGB.svg" alt="logo-granbery" width="100px" height="100px"></a>
-        <h1>Faculdade Metodista Granbery</h1>
+        <a href=" "><img src="assets/images/logoGB.svg" alt="logo-granbery" width="150px" height="150px"></a>
+        <h1 class='titulo-facu'>Faculdade Metodista Granbery</h1>
       </div>
-      <hr>
+
       <div>
-        <div class="professorAcesso">Área Coordenação</div>
+        <br>
+      <a href="chat-bot">
+        <button class="btn btn-primary">Agulhão Bot</button>
+      </a>
+        <hr>
+        <h4>PROFESSOR</h4>
+        <hr>
       </div>
-      <br>
-      <div class="acesso-bot ">
+
+
+      <div class="acesso-bot">
         <form>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail: ">
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="password" value="">
+            <input type="password" class="form-control" id="password" value="" placeholder="Senha: ">
           </div>
         </form>
       </div>
       <a href="">
-        <button class="btn btn-primary">Entrar</button>
+        <button class="btn btn-primary">Acessar</button>
       </a>
-      <hr>
-      <br>
-      <div>
-        <div class="professorAcesso">É calouro e precisa de ajuda? Clique no botão abaixo</div>
-      </div>
-      <br>
-      <a href="chat-bot">
-        <button class="btn btn-primary">Acesso ao Chatbot<img src="assets/images/sair.png" id="img-sair" alt="logo-granbery" width="23px" height="23px"></button>
-      </a>
+
       <br>
     </div>
     <div class="col agulhao">
+
     </div>
   </div>
 </div>
+<app-footer></app-footer>
