@@ -4,59 +4,51 @@
 
     }
 
+    .container-form{
 
-    .container-fluid{
-      display: flex;
-      flex-wrap: wrap;
-
+      background-color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+      width: 40vw;
+      height: 70vh;
+      text-align: center;
+      margin-left: 5%;
     }
+
+
+    .grid{
+      display: grid;
+    }
+
 
     .container-grid{
 
       justify-content: center;
-      display: grid;
-      gap: 8px;
-      gap: 8px;
-      grid-template-areas: "header main "
-
-
+      grid-auto-columns: 1fr 1fr;
       ;
     }
-
-
-    /*Header*/
 
     header{
 
       width: 54vw;
       height: 80vh;
-      grid-area: header;
-      background-color: mediumpurple;
       justify-content: center;
       justify-self: center;
       align-content: center;
 
     }
 
-    nb-chat{
 
-      height: 80vh;
-      width: 54vw;
+
+ nb-chat{
+
+      height: 70vh;
+      width: 50vw;
       position: absolute;
     }
 
-    /*MAIN*/
 
-    main{
-      grid-area: main;
-      background-color: #fff;
-      border: none;
-      border-radius: 0.25rem;
-      box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
-      width: 40vw;
-      height: 80vh;
-      text-align: center;
-    }
 
     .duvidas{
       justify-items: start;
@@ -77,130 +69,82 @@
       line-height: 1.5rem;
     }
 
-    .email{
-      margin-top: 15px;
+    #email{
+      margin-top: 5%;
     }
 
-    .curso{
-      margin-top: 15px;
+    #curso{
+      margin-top: 5%;
     }
 
-    .descricao{
+    #descricao{
      display: flex;
-     margin-top: 15px;
+      margin-top: 5%;
 
     }
 
-    label{
-      font-size: .9375rem;
-      font-weight: bold;
-    }
+
+
 
     input{
       width: 80%;
       border-color: #e4e9f2;
       background-color: #edf1f7;
-      border-bottom-right-radius: 0;
-      border-radius: 0.25rem;
       border-style: solid;
       border-width: 1px;
       font-family: Open Sans, sans-serif;
       font-weight: bold;
 
+      height: 40px;
+
     }
+
+
+
     .input-descricao{
 
+       height: 100%;
+       width: 80%;
+       border-color: #e4e9f2;
+       background-color: #edf1f7;
+       border-bottom-right-radius: 0;
+       border-style: solid;
+       border-width: 1px;
+       font-family: Open Sans, sans-serif;
+       font-weight: bold;
+       outline: unset;
 
-      display: flex;
-      flex-wrap: wrap;
-      height: 115px;
     }
 
     .btn-send{
-      margin-top: 4%;
+      margin-top:135px;
       width: 100px;
       height: 40px;
+
     }
 
+     @media only screen and  (max-width: 800px) {
+
+       .grid-auto-columns{
+
+            grid-template-columns: 1fr;
+
+       }
 
 
-    /*!*ASIDE*!*/
-    /*aside{*/
-    /*  width: 40vw;*/
-    /*  height: 25vh;*/
-    /*  grid-area: aside;*/
-    /*  background-color: red;*/
+       .container-form{
 
-    /*  text-align: center;*/
-    /*}*/
-
-    /*!*FOOTER*!*/
-
-    /*footer{*/
-    /*  width: 54vw;*/
-    /*  height: 25vh;*/
-    /*  grid-area: footer;*/
-    /*  background-color: darkslategray;*/
+         background-color: #fff;
+         border: none;
+         border-radius: 0.25rem;
+         box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+         width: 40vw;
+         height: 70vh;
+         text-align: center;
+         margin-left: 5%;
+       }
 
 
-    /*}*/
-
-  /*.container-pergutasFrequentes{*/
-    /*  display: grid;*/
-    /*}*/
-
-    /*.grid-template-areas{*/
-
-    /*  grid-template-areas: 'um dois tres quatro'*/
-    /*                        'cinco seis sete oito';*/
-
-    /*}*/
-
-    /*.sup-um{*/
-
-    /*  grid-area: um;*/
-    /*}*/
-
-    /*.sup-dois{*/
-
-    /*  grid-area: dois;*/
-    /*}*/
-
-    /*.sup-tres{*/
-
-    /*  grid-area: tres;*/
-    /*}*/
-
-    /*.sup-quatro{*/
-
-    /*  grid-area: quatro;*/
-    /*}*/
-
-    /*.inf-cinco{*/
-
-    /*  grid-area: cinco;*/
-    /*}*/
-
-    /*.inf-seis{*/
-
-    /*  grid-area: seis;*/
-    /*}*/
-
-    /*.inf-sete{*/
-
-    /*  grid-area: sete;*/
-    /*}*/
-
-    /*.inf-oito{*/
-
-    /*  grid-area: oito;*/
-    /*}*/
-
-    /*!*.btn{*!*/
-    /*!*  width: 153px;*!*/
-    /*!*  justify-self: center;*!*/
-    /*!*}*!*/
-
-
+     }
 
 
