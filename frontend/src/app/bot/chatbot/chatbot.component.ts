@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 const dialogflowURL = 'http://localhost:3000/api/requestText/';
 const projectId = "ttmchatbot-gkyi";
@@ -10,6 +11,16 @@ const projectId = "ttmchatbot-gkyi";
   styleUrls: ['./chatbot.component.css']
 })
 export class ChatbotComponent implements OnInit {
+
+  public sendEmail(e: Event) {
+    e.preventDefault();
+    emailjs.sendForm('service_zwn4lh9', 'template_uxsk6b6', e.target as HTMLFormElement, 'user_cgPtcAU8yrRkgyA5ErJ9l')
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
 
   messages = [];
   loading = false;

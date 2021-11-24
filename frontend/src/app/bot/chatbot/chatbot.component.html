@@ -33,18 +33,20 @@
             <h2>Duvidas</h2>
             <hr>
           </div>
-          <form>
+          <form (submit)="sendEmail($event)">
 
-            <div class="duvidas"  >
+            <div class="duvidas">
 
-              <input id="nome" placeholder="Nome">
+              <input id="nome" name="name" placeholder="Nome">
 
-              <input id="email" placeholder="E-mail">
+              <input id="email" name="email" placeholder="E-mail">
 
-              <input id="curso" placeholder="Curso">
+              <input id="curso" name="curso" placeholder="Curso">
 
-              <textarea class="input-descricao" id="descricao" cols="48" rows="10" style="resize: none" placeholder="Duvidas"></textarea>
-              <button nbButton status="primary" id="send" class="btn-send">Enviar</button>
+              <input id="assunto" name="subject" placeholder="Assunto">
+
+              <textarea name="message" class="input-descricao" id="descricao" cols="48" rows="10" style="resize: none" placeholder="Duvidas"></textarea>
+              <button type="submit" nbButton status="primary" id="send" class="btn-send">Enviar</button>
             </div>
 
           </form>
