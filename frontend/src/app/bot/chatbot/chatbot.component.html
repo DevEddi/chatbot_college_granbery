@@ -1,66 +1,41 @@
 <app-nav-bar></app-nav-bar>
+
 <div class="grid container-fluid">
-
-  <div class="grid-auto-columns">
-
+  <div class="grid-template-columns">
     <nb-layout>
+      <nb-layout-column >
+        <div class="container1">
+            <nb-chat title="Bate-papo com o Agulhão">
+              <nb-chat-message *ngFor="let msg of messages" type="text" [message]="msg.text" [reply]="msg.reply"
+                               [sender]="msg.sender" [date]="msg.date" [avatar]="msg.avatar">
+              </nb-chat-message>
+              <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info" type="text"
+                               avatar="/assets/images/agulhaoLogo.svg" message="...">
+              </nb-chat-message>
 
-
-      <nb-layout-column>
-
-
-        <nb-chat title="Bate-papo com o Agulhão">
-
-          <nb-chat-message *ngFor="let msg of messages" type="text" [message]="msg.text" [reply]="msg.reply"
-                           [sender]="msg.sender" [date]="msg.date" [avatar]="msg.avatar">
-          </nb-chat-message>
-
-          <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info" type="text"
-                           avatar="/assets/images/agulhaoLogo.svg" message="...">
-
-          </nb-chat-message>
-
-          <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
-
-        </nb-chat>
-      </nb-layout-column>
-
-
-
-      <nb-layout-column>
-        <div class="container-form">
-          <div class="title">
-            <h2>Duvidas</h2>
-            <hr>
-          </div>
-          <form (submit)="sendEmail($event)">
-
-            <div class="duvidas">
-
-              <input id="nome" name="name" placeholder="Nome">
-
-              <input id="email" name="email" placeholder="E-mail">
-
-              <input id="curso" name="curso" placeholder="Curso">
-
-              <input id="assunto" name="subject" placeholder="Assunto">
-
-              <textarea name="message" class="input-descricao" id="descricao" cols="48" rows="10" style="resize: none" placeholder="Duvidas"></textarea>
-              <button type="submit" nbButton status="primary" id="send" class="btn-send">Enviar</button>
-            </div>
-
-          </form>
+              <nb-chat-form (send)="handleUserMessage($event)"></nb-chat-form>
+            </nb-chat>
         </div>
-
-
+        <div class="container2">
+          <div id="wrapper">
+        	
+            <div id="faleConoscoBox">
+              <h2><span class="thin">FALE COM A GENTE</span></h2>
+                <p>Não conseguiu tirar sua dúvida através do bot?<br> Mande-nos uma mensagem que vamos te responder o quanto antes.</p>
+            <form class="faleConoscoForm" (submit)="sendEmail($event)">
+            
+              <input id="fname" type="text" placeholder="Seu nome*" name="name" required>
+              <input id="emailbox" type="text" placeholder="Seu e-mail*" name="email" required>
+              <input id="assunto" type="text" placeholder="Assunto*" name="subject" required>
+              <textarea id="message" type="text" placeholder="Mensagem*" name="message"></textarea>
+              <input nbButton status="primary" id="send" class="btn-send" type="submit" value="Enviar">
+            </form>
+                    
+            </div>
+          </div>
+        </div>  
       </nb-layout-column>
-
-
     </nb-layout>
-
   </div>
-
-
-
-
 </div>
+
