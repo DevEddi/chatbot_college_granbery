@@ -90,6 +90,7 @@ input,textarea {
   height: 250px;
   border-radius: 0.25rem;
   outline: unset;
+  display: block;
 }
 
 input[type=checkbox] {

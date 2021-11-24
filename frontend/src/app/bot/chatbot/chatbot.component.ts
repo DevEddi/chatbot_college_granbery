@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 const dialogflowURL = 'http://localhost:3000/api/requestText/';
 const projectId = "ttmchatbot-gkyi";
@@ -20,6 +21,10 @@ export class ChatbotComponent implements OnInit {
       }, (error) => {
         console.log(error.text);
       });
+  }
+
+  successNotification(){
+    Swal.fire('Enviado', 'Aguarde resposta por e-mail.', 'success')
   }
 
   messages = [];
