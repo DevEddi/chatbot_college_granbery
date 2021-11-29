@@ -11,7 +11,7 @@
   
 </p>
 
-<h2>🧰 Tools</h2>
+<h2>🧰 Ferramentas</h2>
 
 <div style="display: inline_block"><br>
   <img align="center" alt="3DD1-ANGULAR" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"/>
