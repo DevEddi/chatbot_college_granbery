@@ -32,3 +32,30 @@
 <img alt="Lucas" height="100" width="100" src="https://media-exp1.licdn.com/dms/image/D4D35AQGI3wlOPUVB3g/profile-framedphoto-shrink_400_400/0/1624564049821?e=1638234000&v=beta&t=0Xf8_cajgS8fz_7VCFe_kwGEnwBCcPleusegVvKbA_c" />  
 <img alt="Edmilson" height="100" width="100" src="https://media-exp1.licdn.com/dms/image/C4D03AQGV6fK0v7wqrA/profile-displayphoto-shrink_400_400/0/1633481675426?e=1643846400&v=beta&t=wFwzedd7tAb5v-7NknK6uegYJDhHR_54QwDYLq20Udw" />  
 </div>
+
+<h2> Instalação Frameworks</h2>
+
+Angular
+```bash
+$ npm install -g @angular/cli
+```
+
+Angular Material
+```bash
+$ ng add @angular/material
+```
+
+Bootstrap
+```bash
+$ npm install bootstrap
+```
+
+Jquery
+```bash
+$ npm install jquery
+```
+
+Popper.js
+```bash
+$ npm install popper.js
+```
